@@ -15,7 +15,7 @@ function Adminlogin() {
     <div className="logincontainer">
       <div className="box">
         <form action="#" onSubmit={handle}>
-          <h1>Voter Login</h1>
+          <h1>Admin Login</h1>
 
           <div className="inputgroup">
             <label htmlFor="email">Email</label>
@@ -37,7 +37,7 @@ function Adminlogin() {
           </div>
           <button type="submit">Log In</button>
           <div className="footer">
-            <Link to="/user/register">Don't have an account? Register</Link>
+            <Link to="/user/register">If you are a voter? Register</Link>
             <Link to="#">Forgot Password</Link>
           </div>
         </form>

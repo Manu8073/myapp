@@ -11,7 +11,7 @@
 
 }
 
-h1{
+h1 {
     text-align: center;
     margin: 10px;
     color: #004aad;
@@ -25,29 +25,34 @@ h1{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    
+
 
 }
 
-.inputgroup{
+.inputgroup {
     display: flex;
     flex-direction: column;
     margin: 10px;
-   
-    
+
+
 }
-input:focus{
+
+input:focus {
     outline: none;
-   
+
 }
-label{
-   margin-bottom: 8px;
-   font-weight: 600;
-   color: rgba(0, 0, 0, 0.587);
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.587);
 }
-input[type="tel"],input[type="password"]{
+
+input[type="tel"],
+input[type="text"],
+input[type="password"] {
     width: 100%;
-    
+
     font-size: 16px;
     height: 50px;
     padding: 10px;
@@ -55,10 +60,11 @@ input[type="tel"],input[type="password"]{
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 
-   
+
 
 }
-button{
+
+button {
     height: 50px;
     border-radius: 20px;
     text-align: center;
@@ -68,27 +74,31 @@ button{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     cursor: pointer;
-    
-    
+
+
 }
-button:hover{
+
+button:hover {
     transform: translatey(-5px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.345);
 }
-.footer{
+
+.footer {
     display: flex;
-    
-    
+
+
     margin-top: 20px;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 20px;
-    
+
 }
-.footer a{
+
+.footer a {
     transition: all 0.2s ease-in-out;
     font-size: 15px;
 }
-.footer a:hover{
+
+.footer a:hover {
     color: rgb(86, 105, 246);
 }
