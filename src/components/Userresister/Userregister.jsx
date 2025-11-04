@@ -1,20 +1,26 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import "./Userregister.css";
 
 function Userregister() {
-  const [mobile, setemail] = useState("");
+  const [mobile, setmobile] = useState("");
   const [password, setpassword] = useState("");
+  const [name, setname] = useState("");
+  const navigate = useNavigate();
 
   const handle = (e) => {
     e.preventDefault();
-    console.log(mobile, password);
+    console.log(mobile, password, name);
+    setmobile("");
+    setpassword("");
+    setname("");
+    navigate("/user/login");
   };
 
   return (
     <div className="logincontainer">
       <div className="box">
-        <form action="/user/login" onSubmit={handle}>
+        <form onSubmit={handle}>
           <h1>Voter register</h1>
 
           <div className="inputgroup">
@@ -22,8 +28,9 @@ function Userregister() {
             <input
               type="text"
               placeholder="Full name"
-              value={mobile}
-              onChange={(event) => setemail(event.target.value)}
+              value={name}
+              required
+              onChange={(event) => setname(event.target.value)}
             />
           </div>
 
@@ -33,7 +40,7 @@ function Userregister() {
               type="tel"
               placeholder="mobile number"
               value={mobile}
-              onChange={(event) => setemail(event.target.value)}
+              onChange={(event) => setmobile(event.target.value)}
             />
           </div>
           <div className="inputgroup">
@@ -47,7 +54,7 @@ function Userregister() {
           </div>
           <button type="submit">Register</button>
           <div className="footer">
-            <Link to="/user/register">If your a voter? Register</Link>
+            <Link to="/user/login">If you have account? Login</Link>
             <Link to="#">Forgot Password</Link>
           </div>
         </form>

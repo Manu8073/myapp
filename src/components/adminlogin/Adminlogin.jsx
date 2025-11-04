@@ -9,6 +9,8 @@ function Adminlogin() {
   const handle = (e) => {
     e.preventDefault();
     console.log(email, password);
+    setmobile("");
+    setpassword("");
   };
 
   return (

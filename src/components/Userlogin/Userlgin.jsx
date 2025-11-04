@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import "./Userlogin.css";
 
 function Userlgin() {
-  const [mobile, setemail] = useState("");
+  const [mobile, setmobile] = useState("");
   const [password, setpassword] = useState("");
 
   const handle = (e) => {
     e.preventDefault();
     console.log(mobile, password);
+    setmobile("");
+    setpassword("");
   };
   return (
     <div className="logincontainer">
@@ -22,7 +24,7 @@ function Userlgin() {
               type="tel"
               placeholder="mobile number"
               value={mobile}
-              onChange={(event) => setemail(event.target.value)}
+              onChange={(event) => setmobile(event.target.value)}
             />
           </div>
           <div className="inputgroup">
