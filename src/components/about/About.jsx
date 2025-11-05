@@ -18,7 +18,7 @@ function About() {
         <section className="about-section">
           <h2>Overview</h2>
           <p>
-            The <strong>E-Voting Portal</strong> is a secure, web-based platform
+            The <strong>NextGenVote</strong> is a secure, web-based platform
             designed to modernize the election process and ensure transparency,
             accuracy, and accessibility. It enables eligible voters to cast
             their votes online while maintaining strict verification and data
@@ -76,7 +76,7 @@ function About() {
         <section className="about-section">
           <h2>Vision</h2>
           <p>
-            The <strong>E-Voting Portal</strong> envisions a future where every
+            The <strong>NextGenVote</strong> envisions a future where every
             citizen can vote freely, securely, and conveniently — reinforcing{" "}
             <strong>trust, transparency, and democratic empowerment</strong>
             through digital innovation.

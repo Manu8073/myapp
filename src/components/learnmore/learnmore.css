@@ -1,0 +1,42 @@
+.learn-container {
+    padding: 100px 10%;
+    background-color: #f8f9fa;
+    color: #222;
+    font-family: "Poppins", sans-serif;
+}
+
+.learn-header h1 {
+    color: #004aad;
+    font-weight: 700;
+}
+
+.learn-section {
+    margin-top: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card .icon {
+    font-size: 2rem;
+    color: #004aad;
+    margin-bottom: 10px;
+}

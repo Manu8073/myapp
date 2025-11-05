@@ -1,0 +1,71 @@
+.section-title {
+    color: #004aad;
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 0 0 8px rgba(0, 74, 173, 0.15);
+}
+
+.election-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.election-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0,0, 0.2);
+}
+
+.card-title {
+    color: #004aad;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+.status-badge.active {
+    background-color: #004aad;
+}
+
+.status-badge.upcoming {
+    background-color: #007bff;
+}
+
+.status-badge.closed {
+    background-color: #6c757d;
+}
+
+
+.vote-btn {
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.vote-btn:hover {
+    background-color: #00398c;
+    box-shadow: 0 4px 10px rgba(0, 74, 173, 0.3);
+}

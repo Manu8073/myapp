@@ -1,17 +1,29 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Userlogin.css";
+import { AuthContext } from "../../context/context";
 
 function Userlgin() {
   const [mobile, setmobile] = useState("");
   const [password, setpassword] = useState("");
+  const { login } = useContext(AuthContext);
+  const navigate = useNavigate();
 
-  const handle = (e) => {
+  const handle = async (e) => {
     e.preventDefault();
-    console.log(mobile, password);
+    console.log("Form submitted:", mobile, password);
+
+    const res = await login(mobile, password);
+    if (res.success) {
+      navigate("/dashboard");
+    } else {
+      console.log(res.message || "Login failed");
+    }
+
     setmobile("");
     setpassword("");
   };
+
   return (
     <div className="logincontainer">
       <div className="box">

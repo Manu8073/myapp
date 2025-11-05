@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import "./Adminlogin.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Adminlogin() {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
+  const navigate = useNavigate();
 
   const handle = (e) => {
     e.preventDefault();
     console.log(email, password);
-    setmobile("");
+    setemail("");
     setpassword("");
+    navigate("/admindashboard");
   };
 
   return (
